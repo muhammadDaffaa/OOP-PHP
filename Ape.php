@@ -8,8 +8,16 @@ class Ape extends Animal
   {
     $this->name = $name;
   }
+  function getName()
+  {
+    return $this->name;
+  }
+  function setYell($sounds)
+  {
+    $this->sounds = $sounds;
+  }
   function yell()
   {
-    echo $this->sounds;
+    return $this->sounds;
   }
 }

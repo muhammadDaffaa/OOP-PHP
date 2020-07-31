@@ -3,6 +3,7 @@
 class Frog extends Animal
 {
   public $sounds1 = "hop hop";
+  public $legs = 4;
 
   function __construct($name)
   {
@@ -10,10 +11,22 @@ class Frog extends Animal
   }
   function getName()
   {
-    echo $this->name;
+    return $this->name;
+  }
+  function setJump($sounds1)
+  {
+    $this->sounds1 = $sounds1;
   }
   function jump()
   {
-    echo $this->sounds1;
+    return $this->sounds1;
+  }
+  function setLeg($legs)
+  {
+    $this->legs = $legs;
+  }
+  function getLeg()
+  {
+    return $this->legs;
   }
 }

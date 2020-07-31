@@ -12,10 +12,14 @@ class Animal
   }
   function getName()
   {
-    echo $this->name;
+    return $this->name;
   }
   function getLegs()
   {
-    echo $this->legs;
+    return $this->legs;
+  }
+  function getCold_blooded()
+  {
+    return $this->cold_blooded;
   }
 }
